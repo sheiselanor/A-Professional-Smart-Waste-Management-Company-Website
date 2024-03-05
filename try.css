@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/* Heading */
+.heading h2{
+    font-size: 30px;
+    font-weight: 500;
+    border-left: 8px solid #025516;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+.heading p{
+    font-size: 18px;
+}
+.heading p span{
+    font-weight: 600;
+    color: #056219;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Aligns text within the caption box */
+    /* Make sure slides are stacked on top of each other */
+    top: 0;
+    left: 0;
+}
+
+.banner-slide.active {
+    opacity: 1; /* Only the active slide is visible */
+}
+
+.pop-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.pop-image span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2em;
+}
+
+.caption {
+    color: #fff;
+    max-width: 50%; /* Adjust as needed */
+    /* Remove position, bottom, and left properties */
+}
+
+.caption h1 {
+    font-size: 3.5em;
+    margin: 0 0 0.3em 0; /* Added bottom margin for spacing between h1 and p */
+}
+
+.caption p {
+    font-size: 1.2em;
+    margin: 0; /* Reset margin for paragraphs if desired */
+}
+
+#reasons {
+    text-align: center;
+    padding: 120px 0;
+}
+
+#reasons h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reason {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.reason img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.reason img:hover {
+    transform: scale(1.1); /* Slight pop-up effect */
+}
+
+.reason h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.reason p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Ensure other content flows below the fixed banner */
+body {
+    padding-top: 10px; /* Same as the banner height */
+} 
+
+
+/* Buttons */
+.btn1{
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #0c5b1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: all 0.5s;
+}
+.btn1:hover{
+    background-color: #10c237;
+    color: #eaf4ee;
+}
+
+/* Header */
+header{
+    background-color: #34f2b9;
+    width: 100%;
+    
+}
+
+header .navbar-brand{
+    font-size: 38px;
+    font-weight: 500;
+    color: #ffffff;
+    font-style:initial;
+}
+
+nav{
+    padding: 8px 0px !important;
+}
+
+.cont-sec{
+    padding: 8px;
+    background-color: #e6edff;
+    width: 100%;
+}
+
+.cont-sec .contact-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont-sec p{
+    margin: 0;
+}
+
+.cont-sec p a{
+    text-decoration: none;
+    color: #303054;
+}
+
+.cont-sec .social{
+    text-align: right
+}
+
+.cont-sec .social a img{
+    width: 20px;
+    margin-left: 15px;
+}
+
+.home-sec .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto; /* Centers the container if needed, but doesn't add space */
+    background-color: #8fdb47;
+}
+
+.home-sec .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.home-sec .img-sec, .home-sec .home-info {
+    padding: 0;
+}
+
+/* If you're using Bootstrap or a similar framework, ensure that the container class is set to fluid */
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.home-sec .home-content {
+    padding: 0 0;
+}
+
+.home-sec .home-content h1 {
+    margin-top: 70px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:#f1f4f0;
+}
+
+.home-sec .home-content h2 span {
+    color: #015501;
+}
+
+.home-sec .home-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color:#f1f4f0;
+}
+
+.home-sec .home-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color:#f1f4f0;
+}
+
+.home-sec .img-sec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.home-sec .img-sec img {
+    width: 100%;
+    max-width: 700px; /* Adjust as needed */
+}
+
+.home-sec .img-sec .img-overlay {
+    position: absolute;
+    bottom: 10px; /* Position as needed */
+    left: 5px; /* Position as needed */
+    background-color: rgba(23, 55, 4, 0.556); /* Light background */
+    padding: 20px 80px; /* Adjust as needed */
+    color: #fbf8f8; /* Text color */
+}
+
+.home-sec .img-sec .img-overlay p {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Missions */
+.mission {
+    padding: 150px 0;
+}
+
+.gallery-sec {
+    position: relative;
+    padding: 50px 0;
+}
+
+.gallery-sec .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery-sec .image-container .image {
+    width: 300px; /* Width of the image */
+    margin-bottom: 10px; /* Space for the caption */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative; /* For positioning the caption */
+}
+
+.gallery-sec .image-container .image img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+.gallery-sec .image-container .image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-sec .image-container .image figcaption {
+    background-color: rgba(62, 47, 47, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px; /* Adjust padding as needed */
+    width: 100%; /* Match width with the image */
+    font-size: 1.2em;
+}
+
+/* Rest of your CSS for .gallery-sec .pop-image remains unchanged */
+
+
+.gallery-sec .pop-image{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+
+.gallery-sec .pop-image span{
+	position: absolute;
+	top: 120px;
+	right: 50px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.gallery-sec .pop-image img{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid #ffffff;
+	width: 750px;
+	object-fit: cover;
+}
+
+/* Conatact Us */
+.contact-section {
+    padding:  0 80px;
+}
+
+.contact-section .contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-form .form-control {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.contact-section .contact-form textarea.form-control {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.contact-section .contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+
+
+
+/* Footer */
+footer{
+    background-color: #303054;
+    color: #e6edff;
+    padding: 50px 0;
+}
+footer h4{
+    margin-bottom: 20px;
+}
+footer p a{
+    text-decoration: none;
+    color: #e6edff;
+}
+footer p a:hover{
+    text-decoration: none;
+    color: #e6edff;
+}
+
+
+footer .col-two ul li{
+    list-style: none;
+}
+
+footer .col-two ul li a{
+    color: #e6edff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+footer .col-two ul li a:hover{
+    margin-left: 5px;
+}
+footer .social{
+    margin-bottom: 30px;
+}
+footer .social a img{
+    width: 20px;
+    margin-right: 15px;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    border: 7px solid transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #303054;
+}

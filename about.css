@@ -1,0 +1,81 @@
+/* Header and Footer CSS */
+header, footer {
+    background-color: #333; /* Replace with the color you desire */
+    color: white; /* Text color */
+}
+
+header a.navbar-brand {
+    color: white; /* Replace with the color you desire */
+}
+
+header a.navbar-brand img {
+    height: 70px; /* Logo height */
+    margin-right: 10px; /* Space after the logo */
+}
+
+footer .col-one, footer .col-two, footer .col-three {
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: white; /* Footer links color */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Parallax Background Section CSS */
+.section_0.parallax_bg {
+    position: relative; /* Needed for absolute positioning of child elements */
+    background-size: cover; /* Ensure the background covers the section */
+    background-attachment: fixed; /* Fixed background on scroll */
+    min-height: 500px; /* Minimum height for the parallax section */
+}
+
+.row_container.fullwidthcol {
+    position: absolute;
+    width: 100%;
+    top: 50%; /* Centers the content vertically */
+    transform: translateY(-50%); /* Adjust vertical centering based on height */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px 0; /* Padding above and below the content */
+}
+
+/* Responsive Grid for .row_container */
+.row_container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row_container .columns {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1; /* Ensure that columns take up equal space */
+}
+
+/* Text and Content Styling */
+.row_container .columns h2, .row_container .columns p {
+    margin: 10px 0;
+}
+
+.row_container .columns img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Ensure script and link tags are not shown */
+script, link {
+    display: none;
+}
+
+/* Add any additional styles you need for your page here */
+
